@@ -1,0 +1,48 @@
+#!/usr/bin/env  python
+
+__license__   = 'GPL v3'
+
+'''
+www.canada.com
+'''
+
+from calibre.web.feeds.recipes import BasicNewsRecipe
+
+
+class CanWestPaper(BasicNewsRecipe):
+
+    # un-comment the following three lines for the Montreal Gazette
+    title = u'Montreal Gazette'
+    description = u'News from Montreal, QC'
+
+
+    language = 'en_CA'
+    __author__ = 'Nick Redding'
+    no_stylesheets = True
+    auto_cleanup = True
+    auto_cleanup_keep = '//*[@id="imageBox"]'
+    timefmt = ' [%b %d]'
+    extra_css = '''
+                .timestamp {  font-size:xx-small; display: block; }
+                #storyheader { font-size: medium; }
+                #storyheader h1 { font-size: x-large; }
+                #storyheader h2 { font-size: large;  font-style: italic; }
+                .byline { font-size:xx-small; }
+                #photocaption { font-size: small; font-style: italic }
+                #photocredit { font-size: xx-small; }'''
+    
+
+
+    feeds          = [
+('News', 
+ 'http://rss.canada.com/get/?F297'),
+ ('Sports', 
+ 'http://rss.canada.com/get/?F299'),
+ ('Entertainment', 
+ 'http://rss.canada.com/get/?F7366'),
+ ('Business', 
+ 'http://rss.canada.com/get/?F6939'),
+]
+
+
+ 

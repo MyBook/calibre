@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+# vim:fileencoding=UTF-8:ts=4:sw=4:sta:et:sts=4:ai
+
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class HoustonChronicle(BasicNewsRecipe):
+
+    title          = u'The Houston Chronicle'
+    description    = 'News from Houston, Texas'
+    __author__	   = 'Kovid Goyal'
+    language       = 'en'
+    timefmt        = ' [%a, %d %b, %Y]'
+    no_stylesheets = True
+    use_embedded_content = False
+    remove_attributes = ['style']
+
+    oldest_article = 2.0
+
+    keep_only_tags = {'class':lambda x: x and ('hst-articletitle' in x or
+        'hst-articletext' in x or 'hst-galleryitem' in x)}
+    remove_attributes = ['xmlns']
+
+    feeds = [
+            ('News', "http://www.chron.com/rss/feed/News-270.php"),
+            ('Sports',
+                'http://www.chron.com/sports/headlines/collectionRss/Sports-Headlines-Staff-Stories-10767.php'),
+            ('Neighborhood',
+                'http://www.chron.com/rss/feed/Neighborhood-305.php'),
+            ('Business', 'http://www.chron.com/rss/feed/Business-287.php'),
+            ('Entertainment',
+                'http://www.chron.com/rss/feed/Entertainment-293.php'),
+            ('Editorials',
+                'http://www.chron.com/opinion/editorials/collectionRss/Opinion-Editorials-Headline-List-10567.php'),
+            ('Life', 'http://www.chron.com/rss/feed/Life-297.php'),
+            ('Science & Tech',
+                'http://www.chron.com/rss/feed/AP-Technology-and-Science-266.php'),
+        ]
+
+

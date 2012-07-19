@@ -1,0 +1,92 @@
+from calibre.web.feeds.news import BasicNewsRecipe
+from calibre import browser
+import re
+
+class AdvancedUserRecipe1306061239(BasicNewsRecipe):
+    title          = u'The Daily Mirror'
+    description = 'News as provided by The Daily Mirror -UK'
+
+    __author__ = 'Dave Asbury'
+    # last updated 8/6/12
+    language = 'en_GB'
+    #cover_url = 'http://yookeo.com/screens/m/i/mirror.co.uk.jpg'
+
+    masthead_url = 'http://www.nmauk.co.uk/nma/images/daily_mirror.gif'
+
+
+    oldest_article = 1
+    max_articles_per_feed = 12
+    remove_empty_feeds = True
+    remove_javascript     = True
+    no_stylesheets = True
+   # auto_cleanup = True
+    #conversion_options = { 'linearize_tables' : True }
+
+
+
+    keep_only_tags = [         dict(name='h1'),
+                         dict(name='div',attrs={'class' : 'lead-text'}),
+                         dict(name='div',attrs={'class' : 'styleGroup clearfix'}),
+                         dict(name='div',attrs={'class' : 'widget relatedContents pictures widget-editable viziwyg-section-245 inpage-widget-158123'}),
+                        # dict(name='figure',attrs={'class' : 'clearfix'}),
+                         dict(name='div',attrs={'class' :'body '}),
+
+       #dict(attrs={'class' : ['article-attr','byline append-1','published']}),
+       #dict(name='p'),
+        ]
+
+
+    remove_tags = [
+           dict(attrs={'class' : ['article sa-teaser type-opinion','image-gallery','gallery-caption']}),
+           dict(attrs={'class' : 'comment'}),
+           dict(name='title'),
+           dict(name='ul',attrs={'class' :  'clearfix breadcrumbs '}),
+           dict(name='ul',attrs={'id' : 'login-201109171215'}),
+           dict(name='div',attrs={'class' : ['inline-ad span-16 last','caption']}),#'widget navigation breadcrumb widget-editable viziwyg-section-198 inpage-widget-80721 span-17','image-credit'
+                    ]
+
+    preprocess_regexps = [
+        (re.compile(r'- mirror.co.uk', re.IGNORECASE | re.DOTALL), lambda match: '')]
+
+
+    feeds          = [
+        (u'News',u'http://www.mirror.co.uk/news/rss.xml'),
+        (u'Sports',u'http://www.mirror.co.uk/sport/rss.xml'),
+        (u'3AM',u'http://www.mirror.co.uk/3am/rss.xml'),
+        (u'Lifestyle',u'http://www.mirror.co.uk/lifestyle/rss.xml')
+
+
+
+
+           # example of commented out feed not needed ,(u'Travel','http://www.mirror.co.uk/advice/travel/rss.xml')
+  ]
+    extra_css  = '''
+                           h1{ font-size:medium;}
+    body{ text-align: justify; font-family:Arial,Helvetica,sans-serif; font-size:11px; font-size-adjust:none; font-stretch:normal; font-style:normal; font-variant:normal; font-weight:normal;}
+                           img { display:block}
+                     '''#
+
+    def get_cover_url(self):
+        soup = self.index_to_soup('http://www.politicshome.com/uk/latest_frontpage.html')
+# look for the block containing the mirror button and url
+        cov = soup.find(attrs={'style' : 'background-image: url(http://www.politicshome.com/images/sources/source_frontpage_button_92.gif);'})
+        cov2 = str(cov)
+        cov2='http://www.politicshome.com'+cov2[9:-142]
+#cov2 now contains url of the page containing pic
+        soup = self.index_to_soup(cov2)
+        cov = soup.find(attrs={'id' : 'large'})
+        cov2 = str(cov)
+        cov2=cov2[27:-18]
+        #cov2 now is pic url, now  go back to original function
+        br = browser()
+        br.set_handle_redirect(False)
+        try:
+            br.open_novisit(cov2)
+            cover_url = cov2
+        except:
+            cover_url ='http://profile.ak.fbcdn.net/hprofile-ak-snc4/373019_6149699161_1710984811_n.jpg'
+
+        # print '******** string is  ', cov2,' ***'
+        #cover_url = cov2
+        #cover_url = 'http://www.thesun.co.uk/img/global/new-masthead-logo.png'
+        return cover_url

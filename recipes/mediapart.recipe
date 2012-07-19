@@ -1,0 +1,62 @@
+__license__   = 'GPL v3'
+__copyright__ = '2009, Mathieu Godlewski <mathieu at godlewski.fr>; 2010-2012, Louis Gesbert <meta at antislash dot info>'
+'''
+Mediapart
+'''
+
+__author__ = '2009, Mathieu Godlewski <mathieu at godlewski.fr>; 2010-2012, Louis Gesbert <meta at antislash dot info>'
+
+from calibre.ebooks.BeautifulSoup import BeautifulSoup, Tag
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class Mediapart(BasicNewsRecipe):
+    title          = 'Mediapart'
+    __author__ = 'Mathieu Godlewski, Louis Gesbert'
+    description = 'Global news in french from news site Mediapart'
+    oldest_article = 7
+    language = 'fr'
+    needs_subscription = True
+    max_articles_per_feed = 50
+
+    use_embedded_content = False
+    no_stylesheets = True
+
+    cover_url = 'http://static.mediapart.fr/files/pave_mediapart.jpg'
+
+    feeds =  [
+        ('Les articles', 'http://www.mediapart.fr/articles/feed'),
+    ]
+
+# -- print-version
+
+    conversion_options = { 'smarten_punctuation' : True }
+
+    remove_tags = [ dict(name='div', attrs={'class':'print-source_url'}) ]
+
+    def print_version(self, url):
+        raw = self.browser.open(url).read()
+        soup = BeautifulSoup(raw.decode('utf8', 'replace'))
+        link = soup.find('a', {'title':'Imprimer'})
+        if link is None:
+            return None
+        return link['href']
+
+# -- Handle login
+
+    def get_browser(self):
+        br = BasicNewsRecipe.get_browser()
+        if self.username is not None and self.password is not None:
+            br.open('http://www.mediapart.fr/')
+            br.select_form(nr=0)
+            br['name'] = self.username
+            br['pass'] = self.password
+            br.submit()
+        return br
+
+    def preprocess_html(self, soup):
+        for title in soup.findAll('p', {'class':'titre_page'}):
+            title.name = 'h3'
+        for legend in soup.findAll('span', {'class':'legend'}):
+            legend.insert(0, Tag(soup, 'br', []))
+            legend.name = 'small'
+        return soup

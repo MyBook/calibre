@@ -1,0 +1,12 @@
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class BasicUserRecipe1333905513(BasicNewsRecipe):
+    title          = u'Trouw'
+    __author__ = 'asalet_r'
+    language = 'nl'
+    description    = u'Trouw de Verdieping'
+    oldest_article = 1
+    max_articles_per_feed = 25
+    auto_cleanup = True
+
+    feeds          = [(u'Nederland', u'http://www.trouw.nl/nieuws/nederland/rss.xml'), (u'Buitenland', u'http://www.trouw.nl/nieuws/buitenland/rss.xml'), (u'Politiek', u'http://www.trouw.nl/nieuws/politiek/rss.xml'), (u'Economie', u'http://www.trouw.nl/nieuws/economie/rss.xml'), (u'Sport', u'http://www.trouw.nl/nieuws/sport/rss.xml'), (u'Cultuur', u'http://www.trouw.nl/nieuws/cultuur/rss.xml'), (u'Gezondheid', u'http://www.trouw.nl/nieuws/gezondheid/rss.xml'), (u'Onderwijs', u'http://www.trouw.nl/nieuws/onderwijs/rss.xml'), (u'Opinie', u'http://www.trouw.nl/opinie/rss.xml'), (u'Groen', u'http://www.trouw.nl/groen/rss.xml'), (u'Religie-Filosofie', u'http://www.trouw.nl/religie-filosofie/rss.xml'), (u'Schrijf', u'http://www.trouw.nl/schrijf/rss.xml'), (u'Moderne Manieren', u'http://www.trouw.nl/moderne-manieren/rss.xml')]

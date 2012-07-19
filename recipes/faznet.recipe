@@ -1,0 +1,38 @@
+__license__   = 'GPL v3'
+__copyright__ = '2008-2011, Kovid Goyal <kovid at kovidgoyal.net>, Darko Miletic <darko at gmail.com>'
+'''
+Profile to download FAZ.NET
+'''
+
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class FazNet(BasicNewsRecipe):
+    title                 = 'FAZ.NET'
+    __author__            = 'Kovid Goyal, Darko Miletic'
+    description           = 'Frankfurter Allgemeine Zeitung'
+    publisher             = 'Frankfurter Allgemeine Zeitung GmbH'
+    category              = 'news, politics, Germany'
+    use_embedded_content  = False
+    language = 'de'
+
+    max_articles_per_feed = 30
+    no_stylesheets        = True
+    encoding              = 'utf-8'
+    remove_javascript     = True
+    keep_only_tags = [{'class':'FAZArtikelEinleitung'},
+            {'id':'ArtikelTabContent_0'}]
+
+    feeds = [
+              ('FAZ.NET Aktuell', 'http://www.faz.net/aktuell/?rssview=1'),
+              ('Politik', 'http://www.faz.net/aktuell/politik/?rssview=1'),
+              ('Wirtschaft', 'http://www.faz.net/aktuell/wirtschaft/?rssview=1'),
+              ('Feuilleton', 'http://www.faz.net/aktuell/feuilleton/?rssview=1'),
+              ('Sport', 'http://www.faz.net/aktuell/sport/?rssview=1'),
+              ('Gesellschaft', 'http://www.faz.net/aktuell/gesellschaft/?rssview=1'),
+              ('Finanzen', 'http://www.faz.net/aktuell/finanzen/?rssview=1'),
+              ('Technik & Motor', 'http://www.faz.net/aktuell/technik-motor/?rssview=1'),
+              ('Wissen', 'http://www.faz.net/aktuell/wissen/?rssview=1'),
+              ('Reise', 'http://www.faz.net/aktuell/reise/?rssview=1'),
+              ('Beruf & Chance', 'http://www.faz.net/aktuell/beruf-chance/?rssview=1')
+            ]
+
