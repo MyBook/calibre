@@ -279,13 +279,6 @@
     </xsl:template>
     <!-- annotation -->
     <xsl:template name="annotation">
-        <xsl:if test="@id">
-            <xsl:element name="a">
-                <xsl:attribute name="name"><xsl:value-of select="@id"/></xsl:attribute>
-            </xsl:element>
-        </xsl:if>
-        <h3>Annotation</h3>
-        <xsl:apply-templates/>
     </xsl:template>
     <!-- tables -->
     <xsl:template match="fb:table">

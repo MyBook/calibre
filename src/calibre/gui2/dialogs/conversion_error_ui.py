@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/conversion_error.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/conversion_error.ui'
 #
-# Created: Wed Jun 27 09:32:15 2012
+# Created: Thu Jul 19 23:32:30 2012
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!

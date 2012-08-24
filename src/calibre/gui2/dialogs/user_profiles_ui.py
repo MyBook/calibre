@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/user_profiles.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/user_profiles.ui'
 #
-# Created: Sat May 28 14:27:24 2011
-#      by: PyQt4 UI code generator 4.8.4
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -122,8 +122,8 @@ class Ui_Dialog(object):
         self.gridlayout.addWidget(self.label_2, 0, 0, 1, 1)
         self.profile_title = EnLineEdit(self.page)
         font = QtGui.QFont()
-        font.setWeight(75)
         font.setBold(True)
+        font.setWeight(75)
         self.profile_title.setFont(font)
         self.profile_title.setObjectName(_fromUtf8("profile_title"))
         self.gridlayout.addWidget(self.profile_title, 0, 1, 1, 2)
@@ -133,7 +133,7 @@ class Ui_Dialog(object):
         self.oldest_article = QtGui.QSpinBox(self.page)
         self.oldest_article.setMinimum(1)
         self.oldest_article.setMaximum(365)
-        self.oldest_article.setProperty(_fromUtf8("value"), 7)
+        self.oldest_article.setProperty("value", 7)
         self.oldest_article.setObjectName(_fromUtf8("oldest_article"))
         self.gridlayout.addWidget(self.oldest_article, 2, 2, 1, 1)
         self.label_7 = QtGui.QLabel(self.page)
@@ -142,7 +142,7 @@ class Ui_Dialog(object):
         self.max_articles = QtGui.QSpinBox(self.page)
         self.max_articles.setMinimum(5)
         self.max_articles.setMaximum(100)
-        self.max_articles.setProperty(_fromUtf8("value"), 10)
+        self.max_articles.setProperty("value", 10)
         self.max_articles.setObjectName(_fromUtf8("max_articles"))
         self.gridlayout.addWidget(self.max_articles, 3, 2, 1, 1)
         self.verticalLayout_5.addLayout(self.gridlayout)

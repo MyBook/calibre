@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/store/config/chooser/chooser_widget.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/store/config/chooser/chooser_widget.ui'
 #
-# Created: Sat May 28 21:27:07 2011
-#      by: PyQt4 UI code generator 4.8.4
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

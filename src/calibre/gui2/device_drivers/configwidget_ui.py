@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/device_drivers/configwidget.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/device_drivers/configwidget.ui'
 #
-# Created: Mon May  2 11:18:02 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

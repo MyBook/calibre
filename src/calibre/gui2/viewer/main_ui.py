@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/viewer/main.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/viewer/main.ui'
 #
-# Created: Wed May 30 16:34:50 2012
+# Created: Thu Jul 19 23:32:29 2012
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!

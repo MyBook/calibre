@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/delete_matching_from_device.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/delete_matching_from_device.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -36,7 +36,6 @@ class Ui_DeleteMatchingFromDeviceDialog(object):
         self.table.setSizePolicy(sizePolicy)
         self.table.setColumnCount(0)
         self.table.setObjectName(_fromUtf8("table"))
-        self.table.setColumnCount(0)
         self.table.setRowCount(0)
         self.verticalLayout.addWidget(self.table)
         self.buttonBox = QtGui.QDialogButtonBox(DeleteMatchingFromDeviceDialog)

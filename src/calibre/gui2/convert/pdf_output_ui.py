@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/convert/pdf_output.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/convert/pdf_output.ui'
 #
-# Created: Wed Dec 28 09:17:27 2011
-#      by: PyQt4 UI code generator 4.9
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

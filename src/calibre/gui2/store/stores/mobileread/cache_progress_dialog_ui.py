@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/store/stores/mobileread/cache_progress_dialog.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/store/stores/mobileread/cache_progress_dialog.ui'
 #
-# Created: Sun Jun 26 14:04:32 2011
-#      by: PyQt4 UI code generator 4.8.4
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -25,7 +25,7 @@ class Ui_Dialog(object):
         self.message.setObjectName(_fromUtf8("message"))
         self.verticalLayout.addWidget(self.message)
         self.progress = QtGui.QProgressBar(Dialog)
-        self.progress.setProperty(_fromUtf8("value"), 24)
+        self.progress.setProperty("value", 24)
         self.progress.setObjectName(_fromUtf8("progress"))
         self.verticalLayout.addWidget(self.progress)
         self.details = QtGui.QLabel(Dialog)

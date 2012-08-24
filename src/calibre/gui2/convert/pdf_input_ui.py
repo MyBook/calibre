@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/convert/pdf_input.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/convert/pdf_input.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -28,7 +28,7 @@ class Ui_Form(object):
         self.opt_unwrap_factor = QtGui.QDoubleSpinBox(Form)
         self.opt_unwrap_factor.setMaximum(1.0)
         self.opt_unwrap_factor.setSingleStep(0.01)
-        self.opt_unwrap_factor.setProperty(_fromUtf8("value"), 0.45)
+        self.opt_unwrap_factor.setProperty("value", 0.45)
         self.opt_unwrap_factor.setObjectName(_fromUtf8("opt_unwrap_factor"))
         self.gridLayout.addWidget(self.opt_unwrap_factor, 0, 1, 1, 1)
         self.opt_no_images = QtGui.QCheckBox(Form)

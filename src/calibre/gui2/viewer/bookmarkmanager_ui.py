@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\work\cl\src\calibre\gui2\viewer\bookmarkmanager.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/viewer/bookmarkmanager.ui'
 #
-# Created: Fri Apr 20 12:37:20 2012
+# Created: Thu Jul 19 23:32:29 2012
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/convert/metadata.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/convert/metadata.ui'
 #
-# Created: Sun Jul  8 22:51:11 2012
-#      by: PyQt4 UI code generator 4.9.4
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/store/web_store_dialog.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/store/web_store_dialog.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -41,7 +41,7 @@ class Ui_Dialog(object):
         self.reload.setObjectName(_fromUtf8("reload"))
         self.gridLayout.addWidget(self.reload, 1, 1, 1, 1)
         self.progress = QtGui.QProgressBar(Dialog)
-        self.progress.setProperty(_fromUtf8("value"), 0)
+        self.progress.setProperty("value", 0)
         self.progress.setObjectName(_fromUtf8("progress"))
         self.gridLayout.addWidget(self.progress, 1, 3, 1, 1)
         self.back = QtGui.QPushButton(Dialog)

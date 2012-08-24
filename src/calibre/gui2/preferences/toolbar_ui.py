@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/preferences/toolbar.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/preferences/toolbar.ui'
 #
-# Created: Sun Oct  2 09:15:45 2011
-#      by: PyQt4 UI code generator 4.8.5
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -18,16 +18,13 @@ class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName(_fromUtf8("Form"))
         Form.resize(831, 553)
-        Form.setWindowTitle(_("Form"))
         self.verticalLayout_2 = QtGui.QVBoxLayout(Form)
         self.verticalLayout_2.setObjectName(_fromUtf8("verticalLayout_2"))
         self.label = QtGui.QLabel(Form)
-        self.label.setText(_("<p>The toolbar in calibre is different depending on whether a device is connected or not. Choose <b>which toolbar</b> you would like to customize:"))
         self.label.setWordWrap(True)
         self.label.setObjectName(_fromUtf8("label"))
         self.verticalLayout_2.addWidget(self.label)
         self.what = QtGui.QComboBox(Form)
-        self.what.setToolTip(_("Choose the toolbar to customize"))
         self.what.setSizeAdjustPolicy(QtGui.QComboBox.AdjustToMinimumContentsLengthWithIcon)
         self.what.setMinimumContentsLength(20)
         self.what.setObjectName(_fromUtf8("what"))
@@ -39,7 +36,6 @@ class Ui_Form(object):
         self.horizontalLayout_2.setMargin(0)
         self.horizontalLayout_2.setObjectName(_fromUtf8("horizontalLayout_2"))
         self.groupBox = QtGui.QGroupBox(self.actions_widget)
-        self.groupBox.setTitle(_("A&vailable actions"))
         self.groupBox.setObjectName(_fromUtf8("groupBox"))
         self.verticalLayout = QtGui.QVBoxLayout(self.groupBox)
         self.verticalLayout.setObjectName(_fromUtf8("verticalLayout"))
@@ -59,8 +55,6 @@ class Ui_Form(object):
         self.verticalLayout_3 = QtGui.QVBoxLayout()
         self.verticalLayout_3.setObjectName(_fromUtf8("verticalLayout_3"))
         self.add_action_button = QtGui.QToolButton(self.actions_widget)
-        self.add_action_button.setToolTip(_("Add selected actions to toolbar"))
-        self.add_action_button.setText(_("..."))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(_fromUtf8(I("forward.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.add_action_button.setIcon(icon)
@@ -70,8 +64,6 @@ class Ui_Form(object):
         spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Fixed)
         self.verticalLayout_3.addItem(spacerItem)
         self.remove_action_button = QtGui.QToolButton(self.actions_widget)
-        self.remove_action_button.setToolTip(_("Remove selected actions from toolbar"))
-        self.remove_action_button.setText(_("..."))
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(_fromUtf8(I("back.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.remove_action_button.setIcon(icon1)
@@ -80,7 +72,6 @@ class Ui_Form(object):
         self.verticalLayout_3.addWidget(self.remove_action_button)
         self.horizontalLayout_2.addLayout(self.verticalLayout_3)
         self.groupBox_2 = QtGui.QGroupBox(self.actions_widget)
-        self.groupBox_2.setTitle(_("&Current actions"))
         self.groupBox_2.setObjectName(_fromUtf8("groupBox_2"))
         self.horizontalLayout = QtGui.QHBoxLayout(self.groupBox_2)
         self.horizontalLayout.setObjectName(_fromUtf8("horizontalLayout"))
@@ -99,8 +90,6 @@ class Ui_Form(object):
         self.verticalLayout_4 = QtGui.QVBoxLayout()
         self.verticalLayout_4.setObjectName(_fromUtf8("verticalLayout_4"))
         self.action_up_button = QtGui.QToolButton(self.groupBox_2)
-        self.action_up_button.setToolTip(_("Move selected action up"))
-        self.action_up_button.setText(_("..."))
         icon2 = QtGui.QIcon()
         icon2.addPixmap(QtGui.QPixmap(_fromUtf8(I("arrow-up.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_up_button.setIcon(icon2)
@@ -110,13 +99,10 @@ class Ui_Form(object):
         spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.verticalLayout_4.addItem(spacerItem1)
         self.action_down_button = QtGui.QToolButton(self.groupBox_2)
-        self.action_down_button.setToolTip(_("Move selected action down"))
-        self.action_down_button.setText(_("..."))
         icon3 = QtGui.QIcon()
         icon3.addPixmap(QtGui.QPixmap(_fromUtf8(I("arrow-down.png"))), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.action_down_button.setIcon(icon3)
         self.action_down_button.setIconSize(QtCore.QSize(24, 24))
-        self.action_down_button.setShortcut(_("Ctrl+S"))
         self.action_down_button.setObjectName(_fromUtf8("action_down_button"))
         self.verticalLayout_4.addWidget(self.action_down_button)
         self.horizontalLayout.addLayout(self.verticalLayout_4)
@@ -135,6 +121,19 @@ class Ui_Form(object):
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
-        pass
+        Form.setWindowTitle(_("Form"))
+        self.label.setText(_("<p>The toolbar in calibre is different depending on whether a device is connected or not. Choose <b>which toolbar</b> you would like to customize:"))
+        self.what.setToolTip(_("Choose the toolbar to customize"))
+        self.groupBox.setTitle(_("A&vailable actions"))
+        self.add_action_button.setToolTip(_("Add selected actions to toolbar"))
+        self.add_action_button.setText(_("..."))
+        self.remove_action_button.setToolTip(_("Remove selected actions from toolbar"))
+        self.remove_action_button.setText(_("..."))
+        self.groupBox_2.setTitle(_("&Current actions"))
+        self.action_up_button.setToolTip(_("Move selected action up"))
+        self.action_up_button.setText(_("..."))
+        self.action_down_button.setToolTip(_("Move selected action down"))
+        self.action_down_button.setText(_("..."))
+        self.action_down_button.setShortcut(_("Ctrl+S"))
 
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/lrf_renderer/main.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/lrf_renderer/main.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -57,14 +57,14 @@ class Ui_MainWindow(object):
         self.vboxlayout2.setObjectName(_fromUtf8("vboxlayout2"))
         self.progress_bar = QtGui.QProgressBar(self.frame_2)
         self.progress_bar.setMaximum(0)
-        self.progress_bar.setProperty(_fromUtf8("value"), -1)
+        self.progress_bar.setProperty("value", -1)
         self.progress_bar.setObjectName(_fromUtf8("progress_bar"))
         self.vboxlayout2.addWidget(self.progress_bar)
         self.progress_label = QtGui.QLabel(self.frame_2)
         font = QtGui.QFont()
         font.setPointSize(11)
-        font.setWeight(75)
         font.setBold(True)
+        font.setWeight(75)
         self.progress_label.setFont(font)
         self.progress_label.setObjectName(_fromUtf8("progress_label"))
         self.vboxlayout2.addWidget(self.progress_label)

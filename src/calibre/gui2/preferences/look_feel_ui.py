@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/preferences/look_feel.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/preferences/look_feel.ui'
 #
-# Created: Sun Jul  8 22:37:51 2012
-#      by: PyQt4 UI code generator 4.9.4
+# Created: Thu Jul 19 23:32:29 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

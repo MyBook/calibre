@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/quickview.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/quickview.ui'
 #
-# Created: Mon Jun 27 12:05:40 2011
-#      by: PyQt4 UI code generator 4.8.4
+# Created: Thu Jul 19 23:32:31 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -48,8 +48,6 @@ class Ui_Quickview(object):
         self.books_table.setColumnCount(0)
         self.books_table.setRowCount(0)
         self.books_table.setObjectName(_fromUtf8("books_table"))
-        self.books_table.setColumnCount(0)
-        self.books_table.setRowCount(0)
         self.gridlayout.addWidget(self.books_table, 1, 1, 1, 1)
         self.hboxlayout = QtGui.QHBoxLayout()
         self.hboxlayout.setObjectName(_fromUtf8("hboxlayout"))

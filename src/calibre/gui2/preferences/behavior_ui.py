@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/preferences/behavior.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/preferences/behavior.ui'
 #
-# Created: Sat Apr 30 12:56:25 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -51,7 +51,7 @@ class Ui_Form(object):
         self.opt_network_timeout = QtGui.QSpinBox(Form)
         self.opt_network_timeout.setMinimum(2)
         self.opt_network_timeout.setMaximum(120)
-        self.opt_network_timeout.setProperty(_fromUtf8("value"), 5)
+        self.opt_network_timeout.setProperty("value", 5)
         self.opt_network_timeout.setObjectName(_fromUtf8("opt_network_timeout"))
         self.hboxlayout1.addWidget(self.opt_network_timeout)
         self.gridLayout.addLayout(self.hboxlayout1, 5, 1, 1, 1)

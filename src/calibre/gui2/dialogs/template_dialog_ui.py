@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/template_dialog.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/template_dialog.ui'
 #
-# Created: Fri Jan  6 10:30:19 2012
-#      by: PyQt4 UI code generator 4.9
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 

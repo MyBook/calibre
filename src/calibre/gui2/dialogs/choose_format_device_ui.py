@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/choose_format_device.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/choose_format_device.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -32,6 +32,7 @@ class Ui_ChooseFormatDeviceDialog(object):
         self.formats.setIconSize(QtCore.QSize(64, 64))
         self.formats.setAllColumnsShowFocus(True)
         self.formats.setObjectName(_fromUtf8("formats"))
+        self.formats.headerItem().setTextAlignment(1, QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.vboxlayout.addWidget(self.formats)
         self.buttonBox = QtGui.QDialogButtonBox(ChooseFormatDeviceDialog)
         self.buttonBox.setOrientation(QtCore.Qt.Horizontal)

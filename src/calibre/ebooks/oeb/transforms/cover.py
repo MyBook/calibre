@@ -161,7 +161,7 @@ class CoverManager(object):
             item = self.oeb.manifest.hrefs[
                     urldefrag(self.oeb.guide['titlepage'].href)[0]]
         if item is not None:
-            self.oeb.spine.insert(0, item, True)
+            self.oeb.spine.insert(0, item, False)
             if 'cover' not in self.oeb.guide.refs:
                 self.oeb.guide.add('cover', 'Title Page', 'a')
             self.oeb.guide.refs['cover'].href = item.href

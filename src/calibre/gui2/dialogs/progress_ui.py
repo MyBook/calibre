@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/kovid/work/calibre/src/calibre/gui2/dialogs/progress.ui'
+# Form implementation generated from reading ui file '/home/gugu/w/calibre/src/calibre/gui2/dialogs/progress.ui'
 #
-# Created: Sat Apr 30 12:56:24 2011
-#      by: PyQt4 UI code generator 4.8.3
+# Created: Thu Jul 19 23:32:30 2012
+#      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -25,15 +25,15 @@ class Ui_Dialog(object):
         self.gridLayout.setObjectName(_fromUtf8("gridLayout"))
         self.title = QtGui.QLabel(Dialog)
         font = QtGui.QFont()
-        font.setWeight(75)
         font.setBold(True)
+        font.setWeight(75)
         self.title.setFont(font)
         self.title.setAlignment(QtCore.Qt.AlignCenter)
         self.title.setWordWrap(True)
         self.title.setObjectName(_fromUtf8("title"))
         self.gridLayout.addWidget(self.title, 0, 0, 1, 1)
         self.bar = QtGui.QProgressBar(Dialog)
-        self.bar.setProperty(_fromUtf8("value"), 0)
+        self.bar.setProperty("value", 0)
         self.bar.setObjectName(_fromUtf8("bar"))
         self.gridLayout.addWidget(self.bar, 1, 0, 1, 1)
         self.message = QtGui.QLabel(Dialog)
